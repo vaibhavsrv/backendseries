@@ -14,8 +14,8 @@ class APIerror extends error{
         this.success = false;
         this.errors = errors
 
-        if(statck){
-            this.statcl = statck
+        if(stack){
+            this.stack = statck
         }else{
             Error.captureStackTrace(this,this.constructor)
         }
