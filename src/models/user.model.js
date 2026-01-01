@@ -1,11 +1,7 @@
-// Import mongoose + Schema
 import mongoose, { Schema } from "mongoose";
-// import web tokens from jsonwebtoken
 import jwt from "jsonwebtoken";
-// import bcrypt
 import bcrypt from "bcryptjs";
 
-// Create user schema
 const userSchema = new Schema(
   {
     username: {
@@ -59,7 +55,7 @@ const userSchema = new Schema(
     ],
   },
   {
-    timestamps: true, // createdAt + updatedAt added automatically
+    timestamps: true, 
   }
 );
 
